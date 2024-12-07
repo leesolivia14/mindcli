@@ -36,17 +36,3 @@ func createTable() {
 	}
 }
 
-type BudgetRecord struct {
-	ID     int
-	year   string
-	month  string
-	Amount float64
-}
-
-func GetAllBudgetRecords(year int, month int) ([]BudgetRecord, error) {
-	query := `SELECT amount, description FROM budget WHERE year = ? AND month = ?`
-}
-
-func Save() error {
-
-}
